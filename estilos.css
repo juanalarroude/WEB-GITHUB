@@ -262,4 +262,6 @@ line-height: 25px;}
     margin: 20px;}
 /*ESTILOS RESPONSIVE*/
 @media (max-width: 480px) {.secciones{display: block; margin:0;} 
-  {.textoinicio {margin:0;}}
+  {.textoinicio {margin:0;}
+  {.logoplataformas{width: 222px;
+    display:block;}}
