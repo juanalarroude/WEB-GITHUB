@@ -52,9 +52,7 @@ margin: 15px;}
     background-color: #f5e702;
     margin-bottom: 20px;
     margin-left: 20px;
-    margin-right: 20px;}
-@media (max-width: 480px) {.secciones{display: block; margin:0;} 
-  {.textoinicio {margin:0;}}
+  margin-right: 20px;}
 .footer2 {
     font-family: "Oswald";
     color: rgb(0, 0, 0);
@@ -263,4 +261,5 @@ line-height: 25px;}
     background-color: #f5e9025b;
     margin: 20px;}
 /*ESTILOS RESPONSIVE*/
-@media (max-width: 480px)
+@media (max-width: 480px) {.secciones{display: block; margin:0;} 
+  {.textoinicio {margin:0;}}
