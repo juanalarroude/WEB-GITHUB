@@ -53,7 +53,8 @@ margin: 15px;}
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;}
-@media (max-width: 480px) {.secciones{display: block;} }
+@media (max-width: 480px) {.secciones{display: block;} 
+  {.textoinicio {margin:0;}}
 .footer2 {
     font-family: "Oswald";
     color: rgb(0, 0, 0);
