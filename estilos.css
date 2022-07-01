@@ -1,25 +1,8 @@
 *{padding: 0; 
-  margin: 0;}
-body{background-color: #555f5c ;}
-nav ul{ background-color: #f5e702;
-width: 100%;
-list-style-type: none;
-text-align: center;
-margin-top: 20px;
-justify-content: center;
-align-items: center;}
-nav li {display: inline-flex;}
-nav a { text-decoration: none;
-    color: black;
-    padding: 10px;
-    width: 150px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    align-items: center;}
-nav li:hover {
-    background-color:#fff200;}
+  margin: 0;
+box-sizing: border-box;}
+body{background-color: #555f5c;
+font-family:'Oswald', sans-serif ;}
 h2 {font-family: 'Oswald', sans-serif;
     font-weight: bold;
     text-transform: uppercase;}
@@ -31,7 +14,6 @@ p{font-family: 'Oswald', sans-serif;
 body{background-image: url("IMAGES/173665.jpg");
     background-repeat:no-repeat;
 background-size: cover;}
-.logo {height: 90px;}
 .fotopersonaje{
     width: 200px;
     height: 200px;
@@ -52,6 +34,24 @@ margin: 15px;}
     background-color: #f5e702;
     margin-bottom: 20px;
     margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 140px;}
+.seccionesamy {
+      display: flex;
+      align-items: center;
+      padding: 40px;
+      background-color: #f5e702;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 140px;}
+.seccionespersonajes {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  background-color: #f5e702;
+  margin-bottom: 20px;
+  margin-left: 20px;
   margin-right: 20px;}
 .footer2 {
     font-family: "Oswald";
@@ -78,6 +78,7 @@ padding: 10px;}
    padding:10px; 
    margin: 40px;
    align-items: center;}
+   .PLATAFORMIS .a {line-height: 112px;}
 .intento1{width: 30%;
 align-items: center;
 display: inline-flex;}
@@ -94,7 +95,8 @@ padding: 20px;
 box-sizing: border-box;
 display:flex;
 flex-wrap: wrap;
-justify-content: space-around;}
+justify-content: space-around;
+margin-top: 160px;}
 .galeria img {width: 150px;
 height: 100px;}
 .galeria li{margin: 5px;}
@@ -187,7 +189,7 @@ line-height: 25px;}
     color: #c0b70ad3;}
 .pie-pagina .grupo-2 small{
     font-size: 15px;}
-@media screen and (max-width:800px){
+@media screen and (max-width:480px){
     .pie-pagina .grupo-1{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
@@ -198,25 +200,20 @@ line-height: 25px;}
             font-weight: bold;
             color: black;
             list-style: none;}
+
 /* estilos FORMULARIO CONTACTO */
-.container-form{
-    width: 100%;
+.container-form{ width: 100%;
     max-width: 1100px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 50px;
-    margin-top: 90px;
-}
-.container-form h2{
-    margin-bottom: 15px;
-    font-size: 35px
-}
-.container-form p{
-    font-size: 17px;
+    margin-top: 90px;}
+.container-form h2{margin-bottom: 15px;
+    font-size: 35px}
+.container-form p{font-size: 17px;
     line-height: 1.6;
-    margin-bottom: 30px;
-}
+    margin-bottom: 30px;}
 .container-form a{
     font-size: 17px;
     display: inline-block;
@@ -259,9 +256,93 @@ line-height: 25px;}
     align-items: center;
     padding: 40px;
     background-color: #f5e9025b;
-    margin: 20px;}
+    margin: 200px 20px 60px;}
+
 /*ESTILOS RESPONSIVE*/
-@media (max-width: 480px) {.secciones{display: block; margin:0;} 
-  {.textoinicio {margin:0;}
-  {.logoplataformas{width: 222px;
-    display:block;}}
+@media (max-width: 480px)
+{.secciones{display: block; margin:0; margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;}
+  .seccionesamy{display: block; margin:0; margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;}
+.textoinicio {margin:0;}
+  .logoplataformas{width: 222px;
+    display:block;} 
+  .galeria{
+    margin-top: 33px;}
+  .seccionespersonajes {display: block;}}
+
+ /* estilos NAV */
+ .header {background-color: #f5e702;
+    height: 120px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-top: 20px;}
+  .nav {display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;}
+  .nav-link { color:black;
+    text-decoration: none;} 
+  .logo {padding: 0 40px;
+    line-height: 120px;
+height: 90px;}
+  .nav-menu {display: flex;
+    margin-right: 40px;
+    list-style: none;} 
+  .nav-menu-item {font-size: 18px;
+    margin: 0 10px;
+    line-height: 120px;
+    text-transform: uppercase;
+    width: max-content;} 
+  .nav-menu-link { padding: 8px 12px;
+    border-radius: 3px; } 
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background-color: #fff200;
+    transition: 0.5s;}
+  
+    /* TOGGLE */
+  .nav-toggle {color: black;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;}
+ 
+  /* MOBILE */
+  @media (max-width: 480px) {body {padding-top: 70px;}
+    .header {height: 60px;}
+    .logo {height: 55px;
+      padding: 0 20px;
+      line-height: 60px;}
+    .nav-menu {flex-direction: column;
+      align-items: center;
+      margin: 0;
+      background-color: #f5e902f5;
+      position: fixed;
+      top: 80px;
+      width: 100%;
+      padding: 20px 0;
+      height: calc(100% - 60px);
+      overflow-y: auto;
+      left: 100%;
+      transition: left 0.3s;}
+    .nav-menu-item {line-height: 70px;}
+    .nav-menu-link:hover,
+    .nav-menu-link_active {background: none;
+      background-color: #fff200 ;}
+      .nav-toggle {display: block;}
+    .nav-menu_visible {left: 0;}
+    .intento1 {display: block;}
+    .container-form{display: block;
+    margin-top: 0px;}
+    .container-form form textarea{
+      min-width: 0px;}
+      .cuadradoform {margin: 60px 20px 60px;}
+  }
